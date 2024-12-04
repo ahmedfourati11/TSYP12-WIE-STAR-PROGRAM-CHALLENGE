@@ -1,0 +1,80 @@
+<section class="min-h-screen flex items-center justify-center bg-gray-100">
+    <div class="container mx-auto flex flex-col lg:flex-row items-center px-4 md:px-10 space-y-8 lg:space-y-0 lg:space-x-12">
+      
+      <div class="bg-white shadow-lg rounded-lg p-8 w-full lg:w-1/2">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">
+            <span class="text-customBlue">Create</span>
+            <span class="ml-2 text-orange-500">Account</span>
+          </h2>
+        <form class="space-y-4">
+          
+          <input type="text" placeholder="First Name" class="w-full border border-gray-300 rounded-lg px-4 py-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500" />
+          
+          <input type="text" placeholder="Last Name" class="w-full border border-gray-300 rounded-lg px-4 py-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500" />
+          
+          <input type="email" placeholder="Email Address" class="w-full border border-gray-300 rounded-lg px-4 py-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500" />
+          
+          <div class="flex items-center justify-center space-x-6 mt-4">
+            <!-- Option "Student" -->
+            <label class="flex items-center space-x-2">
+              <input
+                type="radio"
+                name="userType"
+                value="Student"
+                class="w-5 h-5 text-orange-500 border-orange-500 focus:ring-orange-500 focus:ring-2"
+              />
+              <span class="text-md text-gray-700">Student</span>
+            </label>
+          
+            <!-- Option "Adult" -->
+            <label class="flex items-center space-x-2">
+              <input
+                type="radio"
+                name="userType"
+                value="Adult"
+                class="w-5 h-5 text-blue-600 border-orange-500 focus:ring-orange-500 focus:ring-2"
+              />
+              <span class="text-md text-gray-700">Adult</span>
+            </label>
+          </div>          
+          
+          <input type="password" placeholder="Password" class="w-full border border-gray-300 rounded-lg px-4 py-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500" />
+          
+          <input type="password" placeholder="Confirm Password" class="w-full border border-gray-300 rounded-lg px-4 py-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500" />
+          
+          <div class="flex items-center">
+            <input type="checkbox" id="remember" class="text-orange-500 focus:ring-orange-500" />
+            <label for="remember" class="ml-2 text-gray-600">Remember Me</label>
+          </div>
+          
+          <button class="w-full bg-white text-orange-500 border border-orange-500 font-bold rounded-lg px-4 py-2  hover:bg-orange-600 hover:text-white transition duration-300">Create Account</button>
+        </form>
+        <!-- Options de connexion -->
+        <div class="mt-6 text-center">
+          <p class="text-gray-600">Already created ? <a href="#" class="text-customBlue hover:text-orange-500">Sign In</a></p>
+          <br>
+          <hr>
+          <div class="flex space-x-4 justify-center mt-6">
+            <!-- Bouton Facebook -->
+            <button class="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition duration-300">
+              <i class="fab fa-facebook-f mr-2"></i> Facebook
+            </button>
+            <!-- Bouton Gmail -->
+            <button class="flex items-center px-4 py-2 bg-red-500 text-white rounded-lg shadow hover:bg-red-600 transition duration-300">
+              <i class="fab fa-google mr-2"></i> Gmail
+            </button>
+            <!-- Bouton Apple -->
+            <button class="flex items-center px-4 py-2 bg-black text-white rounded-lg shadow hover:bg-gray-800 transition duration-300">
+              <i class="fab fa-apple mr-2"></i> Apple
+            </button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Illustration -->
+      <div class="w-full lg:w-1/2">
+        <img src="../../assets/Sign_Up.png" alt="Illustration" class="w-full h-auto">
+      </div>
+    </div>
+  </section>
+  
