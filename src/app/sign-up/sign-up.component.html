@@ -49,21 +49,27 @@
           
           <button class="w-full bg-white text-orange-500 border border-orange-500 font-bold rounded-lg px-4 py-2  hover:bg-orange-600 hover:text-white transition duration-300">Create Account</button>
         </form>
-        <!-- Options de connexion -->
+        
         <div class="mt-6 text-center">
-          <p class="text-gray-600">Already created ? <a href="#" class="text-customBlue hover:text-orange-500">Sign In</a></p>
-          <br>
-          <hr>
+          <p class="text-gray-600">Already created ? <a routerLink="/Sign_In" class="text-customBlue font-semibold hover:text-orange-500">Sign In</a></p>
+
+        <!-- Séparateur -->
+        <div class="flex items-center my-6">
+            <div class="flex-grow h-px bg-gray-300"></div>
+            <span class="px-4 text-sm text-gray-500">or</span>
+            <div class="flex-grow h-px bg-gray-300"></div>
+        </div>
+
           <div class="flex space-x-4 justify-center mt-6">
-            <!-- Bouton Facebook -->
+            
             <button class="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition duration-300">
               <i class="fab fa-facebook-f mr-2"></i> Facebook
             </button>
-            <!-- Bouton Gmail -->
+            
             <button class="flex items-center px-4 py-2 bg-red-500 text-white rounded-lg shadow hover:bg-red-600 transition duration-300">
               <i class="fab fa-google mr-2"></i> Gmail
             </button>
-            <!-- Bouton Apple -->
+            
             <button class="flex items-center px-4 py-2 bg-black text-white rounded-lg shadow hover:bg-gray-800 transition duration-300">
               <i class="fab fa-apple mr-2"></i> Apple
             </button>
@@ -71,9 +77,9 @@
         </div>
       </div>
   
-      <!-- Illustration -->
+      
       <div class="w-full lg:w-1/2">
-        <img src="../../assets/Sign_Up.png" alt="Illustration" class="w-full h-auto">
+        <img src="../../assets/Sign_Up.png" alt="Illustration" class=" h-auto">
       </div>
     </div>
   </section>
