@@ -1,1 +1,96 @@
-<p>contact works!</p>
+<body class="bg-gray-100">
+    
+    <div class=" py-16">
+      <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8">
+
+        <h1 class="text-3xl font-bold text-center text-blue-800 mb-6">Get In<span class="text-orangeCustom"> Touch</span></h1>
+
+        <form action="#" method="post" class="space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <div>
+              <label class="block text-customBlue font-medium mb-2" for="name">Your name</label>
+              <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" type="text" id="name" placeholder="Your name" required>
+            </div>
+           
+            <div>
+              <label class="block text-customBlue font-medium mb-2" for="email">Contact email</label>
+              <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" type="email" id="email" placeholder="you@example.com" required>
+            </div>
+          </div>
+  
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <div>
+              <label class="block text-customBlue font-medium mb-2" for="phone">Phone Number</label>
+              <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" type="tel" id="phone" placeholder="Phone number" required>
+            </div>
+            
+            <div>
+              <label class="block text-customBlue font-medium mb-2" for="category">You are ?
+              </label>
+              <select class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" id="category" required>
+                <option value="" disabled [selected]="true">Student Or Adult</option>
+                <option value="student">Student</option>
+                <option value="adult">Adult</option>
+              </select>
+            </div>
+          </div>
+  
+          <div>
+            <label class="block text-customBlue font-medium mb-2" for="message">Your message</label>
+            <textarea class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 h-32" id="message" placeholder="Type your message..." required></textarea>
+          </div>
+
+          <div class="flex gap-x-4 items-center">
+            <div class="flex h-6 items-center">
+              <button type="button" 
+                      (click)="toggleSwitch()" 
+                      [ngClass]="{'bg-orange-500': isChecked, 'bg-gray-200': !isChecked}"
+                      class="flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                      role="switch" 
+                      [attr.aria-checked]="isChecked"
+                      aria-labelledby="switch-label">
+                <span class="sr-only">Agree to policies</span>
+                <span aria-hidden="true" 
+                      [ngClass]="{'translate-x-3.5': isChecked, 'translate-x-0': !isChecked}"
+                      class="toggle-indicator size-4 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-300 ease-in-out">
+                </span>
+              </button>
+            </div>
+            <label class="text-sm leading-6 text-gray-600" id="switch-label">
+              By selecting this, you agree to our
+              <span class="font-semibold text-orange-500">privacy&nbsp;policy</span>.
+            </label>
+          </div>
+  
+          <div class="text-center">
+            <button class="bg-white text-orange-500 border border-orange-500 px-8 py-3 w-40 rounded-lg font-semibold hover:bg-orange-500 hover:text-white transition duration-400" type="submit">
+              Send
+            </button>
+          </div>
+          
+        </form>
+      </div>
+    </div>
+  
+    
+    <div class="flex flex-col md:flex-row justify-center items-center text-center py-8 space-y-8 md:space-y-0 md:space-x-24">
+        
+        <div class="flex flex-col items-center">
+          <img src="https://img.icons8.com/fluency/80/000000/email-open.png" class="w-16 h-16 mb-4" alt="Email Icon">
+          <p class="text-orange-500 font-bold text-xl mb-2">Email us</p>
+          <p class="text-gray-600 mb-2">Contact us for any general inquiries or partnership opportunities.</p>
+          <p class="text-customBlue font-bold">sba-enetcom-wieieee.org</p>
+        </div>
+        
+        
+        <div class="flex flex-col items-center">
+          <img src="https://img.icons8.com/fluency/80/000000/customer-support.png" class="w-16 h-16 mb-4" alt="Call Icon">
+          <p class="text-orange-500 font-bold text-xl mb-2">Call us</p>
+          <p class="text-gray-600 mb-2">Call us to speak with a member of our team. We're always happy to assist.</p>
+          <p class="text-customBlue font-bold">+216 26 830 245</p>
+        </div>
+      </div>
+      
+  </body>
