@@ -1,1 +1,51 @@
-<p>student-quizzes works!</p>
+<h1 class="text-3xl font-bold text-center text-blue-800 mb-6 mt-6">Test Your Knowledge <span class="text-orangeCustom"> By Choosing a Quiz</span></h1>
+
+<div class="max-w-4xl mx-auto bg-white rounded-lg shadow-xl p-8 mt-6 mb-6">
+  
+    <div *ngIf="blocquiz" class="flex-grow">
+      
+      <div class="mb-4">
+        <label for="technology" class="text-lg font-semibold text-orange-500">Select a Technology:</label>
+        <select [(ngModel)]="currentTechnology" (change)="loadQuiz()" id="technology" class="w-full p-2 mt-2 border rounded-lg">
+          <option value="AI">Artificial Intelligence (AI)</option>
+          <option value="IoT">Internet of Things (IoT)</option>
+          <option value="Blockchain">Blockchain</option>
+          <option value="CSS">CSS</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="Python">Python</option>
+          <option value="Java">Java</option>
+        </select>
+      </div>
+  
+      <!-- Question Container -->
+      <div id="question-container" class="text-xl font-medium text-orange-500 mb-4">{{ currentQuestion?.question }}</div>
+      
+      <ul id="answers" class="space-y-4">
+        <li *ngFor="let option of currentQuestion?.options; let i = index">
+          <button
+            class="answer-button w-full py-2 px-4 rounded-lg text-gray-700 font-medium hover:bg-orange-500 transition"
+            [ngClass]="{'bg-orange-500': selectedAnswerIndex === i} "
+            (click)="selectAnswer(i)">
+            {{ option }}
+          </button>
+        </li>
+      </ul>      
+
+      <button id="next-btn" class="w-full bg-blue-500 text-white py-2 rounded-lg mt-6" (click)="nextQuestion()" *ngIf="showNextButton">Next</button>
+    </div>
+  
+    <div id="result-container" class="mt-6" *ngIf="quizCompleted">
+      <h2 class="text-xl font-bold text-orange-500 mb-4">Quiz Results</h2>
+      <div id="results-list">
+        <div *ngFor="let answer of selectedAnswers" class="mb-4">
+          <p class="font-semibold">{{ answer.question }}</p>
+          <p><strong>Your Answer: </strong> <span [ngClass]="{'text-green-600': answer.isCorrect, 'text-red-600': !answer.isCorrect}">{{ answer.selectedOption }}</span></p>
+          <p><strong>Correct Answer: </strong> <span class="text-blue-600">{{ answer.correctOption }}</span></p>
+        </div>
+      </div>
+      <div class="text-center">
+            <p id="final-score" class="text-xl font-semibold mt-4 text-orange-500">Your score : {{ score }}/{{ totalQuestions }}</p>
+        </div>
+      <button class="w-full bg-green-500 text-white py-2 rounded-lg mt-6" (click)="reloadPage()">Restart</button>
+    </div>
+  </div>  
