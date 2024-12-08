@@ -36,7 +36,6 @@ export const routes: Routes = [
     {path:"Student_Home",component:HomeStudentComponent},
     {path:"Student_Courses",component:StudentCoursesComponent},
     {path:"Student_Exercises",component:StudentExercisesComponent},
-    {path:"Student_Exercises",component:StudentExercisesComponent},
     {path:"Student_Problem_Solving",component:StudentProblemSolvingComponent},
     {path:"Student_Quizzes",component:StudentQuizzesComponent},
     {path:"Student_Guidance",component:StudentGuidanceComponent},
@@ -55,15 +54,6 @@ export const routes: Routes = [
     {path:"Adult_Tips",component:AdultTipsComponent},
     {path:"Adult_Manga_And_Stories",component:AdultMangaAndStoriesComponent},
     {path:"Adult_Vital_Links",component:AdultVitalLinksComponent},
-    {path:"Adult_Home",component:AdultHomeComponent},
     {path:"Adult_Contact",component:AdultContactComponent},
-
-
-
-
-
-
-
-
 
 ];

@@ -1,5 +1,5 @@
-<!-- <app-navbar></app-navbar> -->
-<!-- <app-navbar-student></app-navbar-student> -->
-<app-navbar-adult></app-navbar-adult>
+<app-navbar *ngIf="shouldShowDefaultNavbar()"></app-navbar>
+<app-navbar-student *ngIf="shouldShowStudentNavbar()"></app-navbar-student>
+<app-navbar-adult *ngIf="shouldShowAdultNavbar()"></app-navbar-adult>
 <router-outlet></router-outlet>
 <app-footer></app-footer>
