@@ -14,6 +14,8 @@ import { StudentContactComponent } from './student-contact/student-contact.compo
 import { StudentTipsComponent } from './student-tips/student-tips.component';
 import { StudentSuccessStoriesComponent } from './student-success-stories/student-success-stories.component';
 import { StudentPathwayComponent } from './student-pathway/student-pathway.component';
+import { StudentProblemSolvingComponent } from './student-problem-solving/student-problem-solving.component';
+import { StudentQuizzesComponent } from './student-quizzes/student-quizzes.component';
 
 export const routes: Routes = [
     {path:"",component:HeroSectionComponent},
@@ -24,7 +26,9 @@ export const routes: Routes = [
     {path:"Student_Home",component:HomeStudentComponent},
     {path:"Student_Courses",component:StudentCoursesComponent},
     {path:"Student_Exercises",component:StudentExercisesComponent},
-    {path:"Student_Guidance",component:StudentGuidanceComponent},
+    {path:"Student_Exercises",component:StudentExercisesComponent},
+    {path:"Student_Problem_Solving",component:StudentProblemSolvingComponent},
+    {path:"Student_Quizzes",component:StudentQuizzesComponent},
     {path:"Student_Tips",component:StudentTipsComponent},
     {path:"Student_Success_Stories",component:StudentSuccessStoriesComponent},
     {path:"Student_Pathway",component:StudentPathwayComponent},
