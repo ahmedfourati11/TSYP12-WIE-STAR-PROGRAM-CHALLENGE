@@ -1,0 +1,62 @@
+<header class="bg-white shadow-md">
+    <div class="container mx-auto flex justify-between items-center py-4 px-8">
+      
+      <div class="flex items-center">
+        <a routerLink="/Adult_Home">
+          <img src="../../assets/logo.png" alt="EZY Skills Logo" class="w-25 h-12 mr-2" />
+        </a>
+      </div>
+  
+      
+      <nav class="hidden md:flex space-x-10 text-lg text-gray-800">
+        <a routerLink="/Adult_Home" class="block font-semibold hover:text-orange-500">Home</a>
+        <a routerLink="/Adult_Courses" class="block font-semibold hover:text-orange-500">Courses</a>
+        <a routerLink="/Adult_Success_Stories" class="block font-semibold hover:text-orange-500">Success Stories</a>
+        <a routerLink="/Adult_Tips" class="block font-semibold hover:text-orange-500">Tips</a>
+        <a routerLink="/Adult_Vital_Links" class="block font-semibold hover:text-orange-500">Vital Links</a>
+        <a routerLink="/Adult_Manga_And_Stories" class="block font-semibold hover:text-orange-500">Manga and Stories</a>
+        <a routerLink="/Adult_Contact" class="block font-semibold hover:text-orange-500">Conatct Us</a>
+      </nav>
+  
+      <div class="hidden md:flex space-x-4">
+        <a routerLink="/">
+          <button class="px-6 py-2 text-orange-600 border-2 border-orangeCustom rounded-lg hover:bg-orange-500 hover:text-white transition duration-400">
+            Log Out
+          </button>
+        </a>
+      </div>
+  
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button (click)="toggleMenu()" class="text-gray-800 focus:outline-none">
+          <svg
+            class="w-6 h-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  
+    <!-- Mobile Menu -->
+    <div *ngIf="isMenuOpen" class="flex flex-col space-y-4 bg-white shadow-md px-8 py-4 text-gray-800">
+      <a routerLink="/Adult_Home" (click)="closeMenu()" class="block font-semibold hover:text-orange-500">Home</a>
+      <a routerLink="/Adult_Courses" (click)="closeMenu()" class="block font-semibold hover:text-orange-500">Courses</a>
+      <a routerLink="/Adult_Success_Stories" (click)="closeMenu()" class="block font-semibold hover:text-orange-500">success stories</a>
+      <a routerLink="/Adult_Tips" (click)="closeMenu()" class="block font-semibold hover:text-orange-500">Tips</a>
+      <a routerLink="/Adult_Vital_Links" (click)="closeMenu()" class="block font-semibold hover:text-orange-500">Vital Links</a>
+      <a routerLink="/Adult_Manga_And_Stories" (click)="closeMenu()" class="block font-semibold hover:text-orange-500">Manga And Stories</a>
+      <a routerLink="/Adult_Contact" (click)="closeMenu()" class="block font-semibold hover:text-orange-500">Contact Us</a>
+      <a routerLink="/" (click)="closeMenu()" class="block font-semibold hover:text-orange-500">Log Out</a>
+    </div>  
+  
+  </header>

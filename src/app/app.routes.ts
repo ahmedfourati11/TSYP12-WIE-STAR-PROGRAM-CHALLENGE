@@ -16,6 +16,15 @@ import { StudentSuccessStoriesComponent } from './student-success-stories/studen
 import { StudentPathwayComponent } from './student-pathway/student-pathway.component';
 import { StudentProblemSolvingComponent } from './student-problem-solving/student-problem-solving.component';
 import { StudentQuizzesComponent } from './student-quizzes/student-quizzes.component';
+import { AdultHomeComponent } from './adult-home/adult-home.component';
+import { AdultCoursesComponent } from './adult-courses/adult-courses.component';
+import { AdultCoursesForStudentsComponent } from './adult-courses-for-students/adult-courses-for-students.component';
+import { AdultAdoptingNewTechnologiesComponent } from './adult-adopting-new-technologies/adult-adopting-new-technologies.component';
+import { AdultSuccesStoriesComponent } from './adult-succes-stories/adult-succes-stories.component';
+import { AdultTipsComponent } from './adult-tips/adult-tips.component';
+import { AdultMangaAndStoriesComponent } from './adult-manga-and-stories/adult-manga-and-stories.component';
+import { AdultVitalLinksComponent } from './adult-vital-links/adult-vital-links.component';
+import { AdultContactComponent } from './adult-contact/adult-contact.component';
 
 export const routes: Routes = [
     {path:"",component:HeroSectionComponent},
@@ -23,6 +32,7 @@ export const routes: Routes = [
     {path:"Contact",component:ContactComponent},
     {path:"Sign_In",component:SignInComponent},
     {path:"Sign_Up",component:SignUpComponent},
+
     {path:"Student_Home",component:HomeStudentComponent},
     {path:"Student_Courses",component:StudentCoursesComponent},
     {path:"Student_Exercises",component:StudentExercisesComponent},
@@ -36,5 +46,24 @@ export const routes: Routes = [
     {path:"Student_Vital_Links",component:StudentVitalLinksComponent},
     {path:"Student_Manga_Stories",component:StudentMangaStoriesComponent},
     {path:"Student_Contact",component:StudentContactComponent},
+
+    {path:"Adult_Home",component:AdultHomeComponent},
+    {path:"Adult_Courses",component:AdultCoursesComponent},
+    {path:"Adult_Courses_For_Students",component:AdultCoursesForStudentsComponent},
+    {path:"Adult_Adopting_New_Technologies",component:AdultAdoptingNewTechnologiesComponent},
+    {path:"Adult_Success_Stories",component:AdultSuccesStoriesComponent},
+    {path:"Adult_Tips",component:AdultTipsComponent},
+    {path:"Adult_Manga_And_Stories",component:AdultMangaAndStoriesComponent},
+    {path:"Adult_Vital_Links",component:AdultVitalLinksComponent},
+    {path:"Adult_Home",component:AdultHomeComponent},
+    {path:"Adult_Contact",component:AdultContactComponent},
+
+
+
+
+
+
+
+
 
 ];
