@@ -1,7 +1,6 @@
 <section class="min-h-screen flex items-center justify-center bg-gray-100">
   <div class="container mx-auto flex flex-col lg:flex-row items-center px-4 md:px-10 space-y-8 lg:space-y-0 lg:space-x-12">
-    
-    <!-- Formulaire -->
+
     <div class="bg-white shadow-lg rounded-lg p-8 w-full lg:w-1/2">
       <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">
         <span class="text-customBlue">Create</span>
@@ -28,11 +27,6 @@
         <input [(ngModel)]="password" name="password" type="password" placeholder="Password" required class="w-full border border-gray-300 rounded-lg px-4 py-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500" />
         
         <input [(ngModel)]="confirmPassword" name="confirmPassword" type="password" placeholder="Confirm Password" required class="w-full border border-gray-300 rounded-lg px-4 py-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500" />
-        
-        <div class="flex items-center">
-          <input [(ngModel)]="rememberMe" name="rememberMe" type="checkbox" id="remember" class="text-orange-500 focus:ring-orange-500" />
-          <label for="remember" class="ml-2 text-gray-600">Remember Me</label>
-        </div>
         
         <button type="submit" class="w-full bg-orange-500 text-white font-bold rounded-lg px-4 py-2 hover:bg-orange-600 transition duration-300">Create Account</button>
       </form>
@@ -64,7 +58,6 @@
       </div>
     </div>
     
-    <!-- Image -->
     <div class="w-full lg:w-1/2">
       <img src="../../assets/Sign_Up.png" alt="Illustration" class="h-auto">
     </div>
