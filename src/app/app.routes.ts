@@ -29,6 +29,7 @@ export const routes: Routes = [
     {path:"Student_Exercises",component:StudentExercisesComponent},
     {path:"Student_Problem_Solving",component:StudentProblemSolvingComponent},
     {path:"Student_Quizzes",component:StudentQuizzesComponent},
+    {path:"Student_Guidance",component:StudentGuidanceComponent},
     {path:"Student_Tips",component:StudentTipsComponent},
     {path:"Student_Success_Stories",component:StudentSuccessStoriesComponent},
     {path:"Student_Pathway",component:StudentPathwayComponent},
